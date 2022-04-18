@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+    background-color: black;
+    color: white !important;
+    font-family: "Fira Code" !important;
+}
+
+
+
+h1 {
+    animation: flicker 1.5s infinite alternate;
+    font-family: "Pacifico";
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow:
+            0 0 7px rgb(255, 0, 187),
+            0 0 10px rgb(242, 5, 135),
+            0 0 21px rgb(166, 13, 197),
+            0 0 10px rgb(255, 0, 187),
+            0 0 12px rgb(255, 0, 187);
+        color: rgba(255, 255, 255, 0.667);
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
